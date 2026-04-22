@@ -1,88 +1,74 @@
-1. Toggle Driver Seat Adjustment via SWP
-The Vehicle shall Get Touchpoint to Toggle Driver Seat Adjustment with [OIDO - 956234] Driver Seat Adjustment request via SWP
-2. Toggle Driver Seat Adjustment via Mobile APP
-The Vehicle shall Get Touchpoint to Toggle Driver Seat Adjustment with [OIDO - 956234] Driver Seat Adjustment request via Mobile APP
-3. Toggle Passenger Seat Adjustment via Buttons
-The Vehicle shall Get Touchpoint to Toggle Passenger Seat Adjustment via Weel Buttons
-4. Toggle Role managment via SWP
-When the vehicle applicability is “taxi” the Vehicle shall Get Touchpoint to create role and set policies for the Passenger via SWP
-
-5. Display Passenger Seat Position Adjustment Status via SWP (deleted 2.2) 
-When [OIDO - 936335] Passenger Seat Position Adjustment Status The Vehicle Systems shall [OIDO - 936335] Passenger Seat Position Adjustment Status via SWP
-6. Display Passenger Seat Position Adjustment Status via Mobile APP (no data 2.2) 
-When [OIDO - 936335] Passenger Seat Position Adjustment Status The Vehicle Systems shall display [OIDO - 936335] Passenger Seat Position Adjustment Status via Mobile APP
-7. Restriction for Display Passenger Seat Position Adjustment Status via SWP
-Where Front passenger seat power adjustment presence The Vehicle Systems shall Display [OIDO - 936335] Passenger Seat Position Adjustment Status via SWP
-8. Restriction for Display Passenger Seat Position Adjustment Status via MobileAPP
-Where Front passenger seat power adjustment presence The Vehicle Systems shall Display [OIDO - 936335] Passenger Seat Position Adjustment Status via MobileAPP
-9. Display Passenger Seat Position Adjustment Status (no data 2.2)
-The Vehicle Systems shall Display [OIDO - 936335] Passenger Seat Position Adjustment Status via SWP.
-
-10. Restriction Control Passenger Seat Position while R
-While the [VEHICLE:OIDO - 849261] is in R mode, the vehicle shall disable all seat adjustments.
-11. Adjust Passenger Seat Position via SWP
-When [OIDO - 956235] Passenger Seat Adjustment request is received from SWP the vehicle shall adjust the seat position according to the selected mode: forward, backward, up, down, backrest tilt forward, or backrest tilt backward.
-12. Adjust Passenger Seat Position via Mobile Phone
-When [OIDO - 956235] Passenger Seat Adjustment request is received via Mobile Phone The vehicle shall adjust the seat position according to the selected mode: forward, backward, up, down, backrest tilt forward, or backrest tilt backward.
-13. Stop Adjustment Passenger Seat Position when Rear door Not Closed
-When [OIDO - 861693] Rear Door Open Status is not Closed the vehicle shall stop the seat adjustment
-14. Send Passenger Seat Motor Fault
-When [OIDO - 1226565] Passenger Seat Motor Malfunction Status is True the vehicle shall provide [OIDO - 1245908] Passenger seat adjustment malfunction Status
-15. Provide Seat position adjustment status
-While the Passenger Seat is adjusted, the Vehicle Systems shall provide [OIDO - 936335] Passenger Seat Position Adjustment Status
-
-16. Restriction Control Passenger Seat Position
-While the [VEHICLE:OIDO - 849261] is in R mode, the vehicle shall disable all seat adjustments.
-17. Adjust Driver Seat Position via SWP
-When [OIDO - 956234] Request Driver Seat Adjustment is received, the vehicle shall adjust the seat position according to the selected mode: forward, backward, up, down, backrest tilt forward, or backrest tilt backward.
-18. Adjust Driver Seat Position via Mobile Phone
-When [OIDO - 956234] Request Driver Seat Adjustment is received, the vehicle shall adjust the seat position according to the selected mode: forward, backward, up, down, backrest tilt forward, or backrest tilt backward.
-19. Adjust Driver Seat Position via Voice Assistant
-When Voice command is received, the vehicle shall adjust the seat position according to the selected mode: forward, backward, up, down, backrest tilt forward, or backrest tilt backward.
-20. Stop Adjustment Driver Seat Position when doors open
-When [OIDO - 875717] All doors Status (RL/RR) is opened during seat movement, the vehicle shall stop the seat adjustment.
-21. Limit Adjustment Driver Seat Position in D-mode
-While [OIDO - 849261] Current gear Status is in D (Drive) mode, the Vehicle shall move the driver's seat more slowly and by no more than X cm
-22. Stop Adjustment Driver Seat Position when R, N, D mode
-When [OIDO - 849261] Current gear Status is R,N, D during seat movement, the vehicle shall stop the seat adjustment.
-23. Automatic Adjust Driver Seat Position 
-When [OIDO - 956234] Request Driver Seat Adjustment is received, the vehicle shall adjust the seat position according to the selected mode: forward, backward, up, down, backrest tilt forward, or backrest tilt backward.
-24. Send Driver Seat Motor Fault
-When [OIDO - 1181020] Driver Seat Motor Malfunction Status = "True" is received, the vehicle shall send activation signal for notifications about seat motor fault.
-
-25. Determine Passenger's Seat Motor Malfunction
-The Vehicle Systems shall determine [OIDO - 1226565] Passenger Seat Motor Malfunction Status during operation (forward/backward or height adjustments)
-
-26. Display notification via SWP
-When the passenger seat motor malfunction is detected ([OIDO - 1226565] Passenger Seat Motor Malfunction Status = "True"), the Vehicle shall display notification (as pop-up) via SWP
-27. Display notification via Mobile phone
-When the passenger seat motor malfunction is detected ([OIDO - 1226565] Passenger Seat Motor Malfunction Status = "True"), the Vehicle shall display notification (as pop-up) via Mobile phone
-
-
-28. Heater activation
-The System shall activate the heater.
-29. Heater deactivation via antonym
-The System shall deactivate the heater.
-
-30. Autopilot enable while engine running
-While the engine is running, the System shall enable autopilot.
-31. Autopilot disable
-While the engine is running, the System shouldn't enable autopilot.
-
-32. Seat adjustment allowed in Parking
-While Parking, the System shall adjust the seat position.
-33. Seat adjustment forbidden in Cruising via explicit not
-While Cruising, the System shall not adjust the seat position.
-34. Seat adjustment allowed when RearDoorOpen
-While RearDoorOpen, the System shall adjust the seat position.
-35. Seat adjustment forbidden in VehicleMovingState
-While VehicleMovingState, the System shall forbid the seat position adjustment.
-36. Seat adjustment forbidden when DoorOpen via antonym 'block'
-While DoorOpen, the System shall block the seat position adjustment.
-37. Steering wheel adjustment forbidden when DoorOpen
-While DoorOpen, the System shall not adjust the steering wheel position.
-
-38. Enable seat heating when engine running
-While the engine is running, the System shall enable seat heating.
-39. Disable seat heating when engine running
-While the engine is running, the System shall disable seat heating.
+aiohappyeyeballs==2.6.1
+aiohttp==3.13.2
+aiosignal==1.4.0
+annotated-types==0.7.0
+attrs==25.3.0
+beautifulsoup4==4.14.3
+blis==0.7.11
+catalogue==2.0.10
+certifi==2025.4.26
+cffi==1.17.1
+charset-normalizer==3.4.2
+click==8.3.2
+cloudpathlib==0.16.0
+colorama==0.4.6
+confection==0.1.5
+contourpy==1.2.1
+cycler==0.12.1
+cymem==2.0.13
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl#sha256=6215d71a3212690e9aec49408a27e3fe6ad7cd6c715476e93d70dc784041e93e
+fonttools==4.51.0
+frozenlist==1.8.0
+h11==0.16.0
+idna==3.10
+iniconfig==2.1.0
+Jinja2==3.1.6
+kiwisolver==1.4.5
+langcodes==3.5.1
+MarkupSafe==3.0.3
+matplotlib==3.8.4
+multidict==6.7.0
+murmurhash==1.0.15
+numpy==1.26.4
+outcome==1.3.0.post0
+packaging==24.0
+pillow==10.3.0
+pluggy==1.6.0
+preshed==3.0.13
+propcache==0.4.1
+pycparser==2.22
+pydantic==2.13.0
+pydantic_core==2.46.0
+pygame==2.1.3.dev8
+pyparsing==3.1.2
+PySocks==1.7.1
+pytest==8.3.5
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
+rdflib==7.6.0
+requests==2.32.3
+scipy==1.13.0
+selenium==4.32.0
+six==1.16.0
+smart-open==6.4.0
+sniffio==1.3.1
+sortedcontainers==2.4.0
+soupsieve==2.8
+spacy==3.7.2
+spacy-legacy==3.0.12
+spacy-loggers==1.0.5
+srsly==2.5.3
+thinc==8.2.5
+tqdm==4.67.3
+trio==0.30.0
+trio-websocket==0.12.2
+typer==0.9.4
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+urllib3==2.4.0
+wasabi==1.1.3
+weasel==0.3.4
+webdriver-manager==4.0.2
+websocket-client==1.8.0
+wsproto==1.2.0
+yarl==1.22.0
